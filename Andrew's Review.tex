@@ -1,0 +1,172 @@
+\documentclass[letter]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{braket} %Can do bra-ket notation with \braket{}
+\usepackage{framed} %Adds the framed environment
+\usepackage{fancyhdr}
+\usepackage{datetime} %For formatting of header date
+\usepackage{ulem} %Makes strike-through lines with \sout{}
+\usdate %Month, Dth, YYYY
+\geometry{
+  letterpaper,
+  left=1in,
+  right=1in,
+  bottom=1in,
+  top=1in}
+\pagestyle{fancy}
+\lhead{NE101 Midterm 2 Andrew's Review Session}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{\today \quad \currenttime}
+\setlength\parindent{0pt}
+
+\begin{document}
+\textbf{\Large{Andrew's Review Session}} \\
+\vspace{12pt}
+%\cite[pp. 45]{krane}
+%\cite[Lec 24]{lecture}
+
+
+\section{Nuclear Reactions}
+
+\begin{equation}
+R= \sigma \phi N
+\end{equation}
+
+\begin{itemize}
+\item \textbf{cross section}: measure of the relative probability for the reaction to occur; units of b= 10$^{-24}$cm$^{2}$
+\item $\sigma$ used to determine activity 
+\end{itemize}
+
+\textbf{Kinematics}
+
+
+$$X(a,b)Y$$
+$$Q= (m_{X}+m_{a}-m_{Y}-m_{b})c^{2}$$
+$$Q =T_{Y}+T_{b}-T_{X}-T_{a}$$
+
+\begin{itemize}
+\item Exothermic Q$>$0 : \\$m_{X}+m_{a}>m_{Y}+m_{b}$,\\ $T_{Y}+T_{b}>T_{X}+T_{a}$
+\item Endothermic Q$<$0 : \\$m_{X}+m_{a}<m_{Y}+m_{b}$,\\ $T_{Y}+T_{b}<T_{X}+T_{a}$
+\item Ultimately, equation 11.5 from Krane
+\item reaction reaches excited states of Y: \\ $Q_{ex} = (m_{X}+m_{a}-m_{Y*}-m_{b})c^{2}$\\$Q_{ex} = Q_{0}-E_{ex}$
+\item compound nucleus \\ $Q = -T_{a} = (m_{X}+m_{a}-m_{C*})c^{2}-E_{ex}$
+\end{itemize}
+
+Population of an excited state of a daughter nucleus by alpha or beta decay can then de-excite by gamma-decay or IC.
+
+\section{Nuclear Structure}
+
+What do the models predict? E(4+)/E(2+), Q(2+), energy levels, spin parity assignments
+
+\vspace{10pt}
+
+What mass region is a particular model the best description? Vibration: A$<$150, Rotation 150$<$A$<$190 and A$>$230 
+
+Depending on the model, what is the size of the gap between the ground state and the first excited state? 
+
+\vspace{10pt}
+
+Shell Model vs. Collective Model ("liquid drop")
+
+\begin{itemize}
+\item shell model: a blend of infinite well and SHO\\ 
+\hspace{10pt} single particle (a single valence proton or neutron) \\
+\hspace{10pt} multi-particle (unpaired protons or neutrons)\\
+\hspace{10pt} magic numbers: 2, 8, 20, 28, 50, 82, 126, 184
+\vspace{10pt}
+\item Vibration Model (collective)
+\vspace{10pt}
+\item Rotational Model (collective)
+\end{itemize}
+
+\section{Decay Modes}
+
+What makes a decay mode preferred over another? Which nuclei are more likely to go through a particular decay?
+
+\vspace{10pt}
+
+For all decay modes, transitions with the least change in angular momentum are preferred
+
+\subsection{$\alpha$-Decay}
+\begin{itemize}
+\item \begin{equation}
+Q = (m_{X}-m_{X'}-m_{\alpha})c^{2} = T_{X'}-T_{\alpha}=B(\alpha)+B(X')-B(X)
+\end{equation}
+\item preferential for removing 5-8 MeV through decrease of mass (mode preferred by have heavy nuclei)
+
+\item a Coulomb repulsion effect, strong force
+
+\item emission of $\alpha$ is preferred over other particles is because it is the most energy efficient, B/A
+
+\item large disintegration energies (Q) had short half-lives; adding neutrons to a nucleus reduces the disintegration energy
+
+\item occurs through tunneling
+
+\item half life increases with increasing Coulomb Barrier\\
+\hspace{20pt} How do you increase the Coulomb Barrier? Example: carrying away a larger amount of angular momentum
+
+\item hindrance: similarity of the initial and final wave functions
+
+\item permitted values of $l_{\alpha}$
+
+\item discrete energy spectrum
+
+\end{itemize}
+
+\subsection{$\beta$-Decay}
+\begin{itemize}
+
+\item method for sliding down the mass parabola
+
+\item represents the drive to reach a more optimal charge ratio
+
+\item drawing a relation to the Semi Empirical Mass Formula, ways to increase the Binding Energy (i.e. more stable configuration):\\
+\hspace{20pt}  increase symmetry $\rightarrow$ decreases $a_{sym}(A-2Z)^{2}/A$\\
+\hspace{20pt}  decrease proton repulsion\\
+\hspace{20pt}  increase pairing
+
+\item $\beta+$ decay and electron capture have thresholds, 2m$_{e}$c$^{2}$ and B$_{n}=13.6eV\times\frac{Z^{2}}{n^{2}}$, respectively. In addition,  these two decays compete. 
+
+\item Selection Rules: which is preferred and why? 
+
+\item continuous energy spectrum (exception: EC results in a monoenergetic neutrino)
+
+\end{itemize}
+
+\subsection{$\gamma$-Decay}
+\begin{itemize}
+
+\item preferred mode for carrying away angular momentum from excited states (rearrangement of nucleons into a more stable spatial arrangement)
+
+\item Selection Rules: Which transition are possible?
+
+\item WE (based on single particle model) conclusions
+
+\item Gamma-decay and IC compete\\
+\hspace{20pt} IC is a low energy event (decreasing transition energy)\\
+\hspace{20pt} large change in J results in more probable IC\\
+\hspace{20pt} IC is more important for heavy nuclei
+\hspace{20pt} 0+ to 0+ transition occurs by IC
+
+\item Compton scattering characteristics: relationship between electron shells, their binding energy, and absorption cross section
+
+\end{itemize}
+
+\section{General }
+
+\begin{itemize}
+
+\item half-life trends
+
+\item selection rules
+
+\item conservation of energy and momentum
+
+\end{itemize}
+
+\end{document}
